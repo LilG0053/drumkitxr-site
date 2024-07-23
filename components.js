@@ -21,18 +21,11 @@
         home.innerText = 'Home';
 
         // Silk Brush link
-        const silkbrush = document.createElement('a');
-        silkbrush.setAttribute('href', '/silk-brush/');
-        silkbrush.innerText = 'Silk Brush';
-
-        // Silk Brush files link
-        const files = document.createElement('p');
-        files.innerHTML = '(<a href="/silk-brush/files/">Files</a>)';
-
-        // WebXR Showcase
-        const showcase = document.createElement('a');
-        showcase.setAttribute('href', "/webxr-showcase/");
-        showcase.innerText = 'WebXR Showcase';
+        const drumsim = document.createElement('a');
+        drumsim.setAttribute('href', '/drum-sim/');
+        drumsim.innerText = 'Drum Simulator XR';
+        // Redirect to /drum-sim
+        window.location.href = "/drum-sim";
 
         // Styling
         const style = document.createElement('style');
@@ -66,9 +59,7 @@
         shadowRoot.append(style);
         wrapper.appendChild(logo);
         wrapper.appendChild(home);
-        wrapper.appendChild(silkbrush);
-        wrapper.appendChild(files);
-        wrapper.appendChild(showcase);
+        wrapper.appendChild(drumsim);
         wrapper.appendChild(document.createElement('hr'));
 
         shadowRoot.append(wrapper);
