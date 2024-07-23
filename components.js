@@ -11,9 +11,12 @@
         wrapper.setAttribute('class', 'header');
 
         // Logo
-        const logo = document.createElement('h1');
+        const logo = document.createElement('img');
         logo.setAttribute('id', 'title');
-        logo.innerText = 'm₂';
+        logo.src = 'src/VRoose.jpg';
+        logo.width = '300';
+        logo.alt = 'Cool AI generated goose with a headset'
+        logo.height = '300';
 
         // Home link
         const home = document.createElement('a');
@@ -24,14 +27,12 @@
         const drumsim = document.createElement('a');
         drumsim.setAttribute('href', '/drum-sim/');
         drumsim.innerText = 'Drum Simulator XR';
-        // Redirect to /drum-sim
-        window.location.href = "/drum-sim";
 
         // Styling
         const style = document.createElement('style');
         style.textContent = `
             a {
-                color: #dd4a4a;
+                color: #9264EF;
                 text-decoration: none;
                 font-size: 1.5em;
             }
