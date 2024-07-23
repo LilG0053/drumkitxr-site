@@ -11,12 +11,7 @@
         wrapper.setAttribute('class', 'header');
 
         // Logo
-        const logo = document.createElement('img');
-        logo.setAttribute('id', 'title');
-        logo.src = 'src/VRoose.jpg';
-        logo.width = '300';
-        logo.alt = 'Cool AI generated goose with a headset'
-        logo.height = '300';
+        const logo = document.createElement('div');
 
         // Home link
         const home = document.createElement('a');
@@ -36,7 +31,12 @@
                 text-decoration: none;
                 font-size: 1.5em;
             }
-        
+
+            a:focus {
+                color: #ADD4EC;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
             h1 {
                 font-size: 4em;
             }

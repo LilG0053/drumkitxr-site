@@ -11,6 +11,7 @@ m2-header {
 
 .main {
     text-align: center;
+    font-size: 23px;
 }
 
 #title {
@@ -39,4 +40,22 @@ pre {
 
 li {
     text-align: left;
+}
+
+a {
+    color: rgb(150, 132, 255);
+}
+
+.footer { 
+    align-items: center;
+    position: absolute; 
+    bottom: 0; 
+    z-index: 10;
+}
+
+.description {
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
 }
